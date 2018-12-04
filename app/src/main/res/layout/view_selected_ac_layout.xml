@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="110"
+    android:padding="@dimen/space_ten">
+
+
+    <ImageView
+        android:layout_weight="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_air_conditioner"/>
+
+    <TextView
+        android:id="@+id/tv1ViewSelectedACLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="SMP20018"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv2ViewSelectedACLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="45"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv3ViewSelectedACLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Speccse.doc"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"/>
+
+
+    <ImageView
+        android:id="@+id/imageView1ViewSelectedACLayout"
+        android:layout_weight="25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_air_conditioner"/>
+
+</LinearLayout>

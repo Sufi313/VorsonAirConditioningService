@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/space_five"
+    android:paddingEnd="@dimen/space_five"
+    >
+
+    <TextView
+        android:paddingTop="@dimen/space_five"
+        android:id="@+id/custom_spinner_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:lines="1"
+        android:text="Select Help"
+        android:textColor="@color/holo_gray_dark"
+        android:textSize="18sp" />
+
+</LinearLayout>

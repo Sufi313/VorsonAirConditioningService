@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/space_ten">
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_ten">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_ten"
+            android:text="User Name"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etUserName_TAF"
+            style="@style/edit_text_style_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:focusable="false"
+            android:editable="false"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_ten"
+            android:text="Old Password"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etOldPassword_TAF"
+            style="@style/edit_text_style_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_ten"
+            android:text="New Password"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword_TAF"
+            style="@style/edit_text_style_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_ten"
+            android:text="Confirm Password"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword_TAF"
+            style="@style/edit_text_style_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_ten"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black" />
+
+
+        <Button
+            android:id="@+id/changePasswordbtn_TAF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/space_ten"
+            android:background="@drawable/button_style"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

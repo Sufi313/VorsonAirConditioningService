@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assignJobList"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:weightSum="100">
+
+    <TextView
+        android:id="@+id/assignJobList_complaintID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:ems="10"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/assignJobList_clientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:ems="10"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/assignJobList_serviceType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:ems="10"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/assignJobList_servicePriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:ems="10"
+        android:textColor="@color/secondary_text"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

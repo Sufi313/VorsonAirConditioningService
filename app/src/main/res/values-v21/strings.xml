@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invoiceNo">Invoice#</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="invoice_calculation">Invoice Calculation</string>
+</resources>

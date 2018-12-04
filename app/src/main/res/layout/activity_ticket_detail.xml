@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".clients.TicketDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarTicketDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarTicketDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/goBackTicketDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_go_back_left_arrow"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_fifty"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/holygrailz_uk_profile_ui" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_ten">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="@dimen/space_ten"
+            app:cardElevation="@dimen/space_ten">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="@dimen/space_five">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/imageVorson"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:layout_marginEnd="@dimen/space_ten"-->
+                <!--android:layout_marginStart="@dimen/space_ten"-->
+                <!--android:layout_marginTop="@dimen/space_ten"-->
+                <!--android:contentDescription="@string/vorson_logo_description"-->
+                <!--android:src="@drawable/vorosonlogo" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/textWithImage"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/space_twenty"-->
+                <!--android:layout_toEndOf="@+id/imageVorson"-->
+                <!--android:text="@string/pvt_limited"-->
+                <!--android:textColor="@color/color_black"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/textaddress"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/imageVorson"-->
+                <!--android:paddingEnd="@dimen/space_ten"-->
+                <!--android:paddingStart="@dimen/space_fourty"-->
+                <!--android:text="@string/vorson_address"-->
+                <!--android:textColor="@color/color_black"-->
+                <!--android:textSize="15sp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/vorsonCell"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/textaddress"-->
+                <!--android:layout_marginTop="@dimen/space_five"-->
+                <!--android:paddingEnd="@dimen/space_ten"-->
+                <!--android:paddingStart="@dimen/space_fourty"-->
+                <!--android:text="@string/vorson_cell"-->
+                <!--android:textColor="@color/color_black"-->
+                <!--android:textSize="15sp" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/vorsonEmail"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/vorsonCell"-->
+                <!--android:layout_marginBottom="@dimen/space_five"-->
+                <!--android:layout_marginTop="@dimen/space_five"-->
+                <!--android:paddingEnd="@dimen/space_ten"-->
+                <!--android:paddingStart="@dimen/space_fourty"-->
+                <!--android:text="@string/vorson_email"-->
+                <!--android:textColor="@color/color_black"-->
+                <!--android:textSize="15sp" />-->
+
+                <!--</RelativeLayout>-->
+
+                <LinearLayout
+                    android:id="@+id/show_ticket_request_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_blue"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/space_five">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/white" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#c2ffffff"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Your Complaint Details"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:layout_marginTop="@dimen/space_five"
+                        android:gravity="center"
+                        android:text="Complaint ID"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTicketDetail_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="VAC001KHI"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/space_five"
+                        android:layout_marginStart="@dimen/space_five"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Complaint For"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTicketDetail_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="AC"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/space_five"
+                        android:layout_marginStart="@dimen/space_five"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Description"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTicketDetail_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Description"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/space_five"
+                        android:layout_marginStart="@dimen/space_five"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Date"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTicketDetail_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="15/4/20018"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginEnd="@dimen/space_five"
+                        android:layout_marginStart="@dimen/space_five"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Status"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTicketDetail_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:gravity="center"
+                        android:text="Completed"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:id="@+id/TicketDetail_techniLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#c2ffffff"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Your Complaint Details"
+                            android:textColor="@color/color_black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/white" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Technician Name"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTicketDetail_techniName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Ahmed Khan"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/space_five"
+                            android:layout_marginStart="@dimen/space_five"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Mobile Number"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTicketDetail_techniNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="03145024989"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/space_five"
+                            android:layout_marginStart="@dimen/space_five"
+                            android:background="@color/white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/TicketDetail_ivoiceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#c2ffffff"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:text="Invoice Details"
+                            android:textColor="@color/color_black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/white" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Invoice ID"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTicketDetail_invoiceID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="VACIN004KHI"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginEnd="@dimen/space_five"
+                            android:layout_marginStart="@dimen/space_five"
+                            android:background="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Completed Date"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTicketDetail_invoiceAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/space_ten"
+                            android:gravity="center"
+                            android:text="Rs: 12,620.00"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_twenty"
+                        android:layout_marginTop="@dimen/space_five"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/TicketDetail_btn_1"
+                            android:layout_width="150dp"
+                            android:layout_height="@dimen/space_fifty"
+                            android:layout_marginStart="@dimen/space_ten"
+                            android:background="@drawable/button_style"
+                            android:text="Dashboard"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/TicketDetail_btn_2"
+                            android:layout_width="150dp"
+                            android:layout_height="@dimen/space_fifty"
+                            android:layout_marginEnd="@dimen/space_ten"
+                            android:layout_marginStart="@dimen/space_ten"
+                            android:background="@drawable/button_style"
+                            android:text="New Submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

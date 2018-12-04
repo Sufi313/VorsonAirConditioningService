@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="105"
+    android:background="@drawable/block_text_background"
+    >
+
+
+        <TextView
+            android:id="@+id/showItemDescription"
+            android:layout_weight="18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="1"
+            android:gravity="left"
+            android:paddingStart="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Description"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+             />
+
+
+        <TextView
+            android:id="@+id/showItemQuantity"
+            android:layout_weight="29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Quantity"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+             />
+
+        <TextView
+            android:id="@+id/showItemRate"
+            android:layout_weight="29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Rate"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+             />
+
+
+        <TextView
+            android:id="@+id/showItemAmount"
+            android:layout_weight="29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Amount"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+             />
+
+    </LinearLayout>

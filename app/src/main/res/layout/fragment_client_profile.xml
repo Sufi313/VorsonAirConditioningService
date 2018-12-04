@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".clients.fragments.ClientProfileFragment"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <android.support.design.widget.CoordinatorLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="@dimen/space_ten">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image_CPF"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/ic_profile"
+                            app:civ_border_color="@color/colorPrimary"
+                            app:civ_border_width="2dp" />
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:id="@+id/fab_CPF"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/colorPrimary"
+                            android:src="@drawable/ic_pencil_edit"
+                            app:elevation="10dp"
+                            app:layout_anchor="@id/profile_image_CPF"
+                            app:layout_anchorGravity="bottom|right"
+                            app:layout_collapseMode="pin" />
+
+                    </android.support.design.widget.CoordinatorLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_ten">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Full Name"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etName_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Email"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etEmail_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Mobile Number"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etMobile_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Living Address"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etliving_Address_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Business Name"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etBusiness_name_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Business Activity"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etBusiness_activity_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Business Phone"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etBusiness_phone_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Business Address"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etBusiness_address_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:textColor="@color/color_black" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Gender"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/sprGender_CPF"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/drawable_spinner_profile"
+                        android:paddingEnd="@dimen/space_thirty"
+                        android:paddingStart="@dimen/space_twenty"
+                        android:textAlignment="textStart"
+                        >
+
+                    </Spinner>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:paddingEnd="@dimen/space_ten"
+                        android:paddingStart="@dimen/space_ten"
+                        android:text="Date of Birth"
+                        android:textColor="@color/color_black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etdob_CPF"
+                        style="@style/edit_text_style_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:inputType="text"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_cal"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:textColor="@color/color_black" />
+
+
+                    <Button
+                        android:id="@+id/saveBtn_CPF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_ten"
+                        android:background="@drawable/button_style"
+                        android:text="Save"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>

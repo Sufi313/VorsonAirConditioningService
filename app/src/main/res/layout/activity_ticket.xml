@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ticketLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice.utilities.TicketActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarTicketActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_blue_header"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarTicketActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/goBackHome"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/space_ten"
+                android:src="@drawable/ic_go_back_left_arrow"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/toolbarLogoImageTicketActivity"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/space_fifty"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/holygrailz_uk_profile_ui" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarTicketActivity"
+        >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_ten"
+                        android:background="@color/transparent"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/submit_your_complaint"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_thirty"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_people_icon" />
+
+
+                        <EditText
+                            android:id="@+id/ticketFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:hint="@string/full_name"
+                            android:inputType="text"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/holo_gray_dark"
+                            android:textColorHint="@color/primary_text" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_message_icon" />
+
+
+                        <EditText
+                            android:id="@+id/ticketEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/holo_gray_dark"
+                            android:textColorHint="@color/primary_text" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_call_icon" />
+
+
+                        <EditText
+                            android:id="@+id/ticketPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:hint="@string/phone_number"
+                            android:inputType="phone"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/holo_gray_dark"
+                            android:textColorHint="@color/primary_text"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_address_icon" />
+
+
+                        <EditText
+                            android:id="@+id/ticketAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:hint="@string/address"
+                            android:inputType="text"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/holo_gray_dark"
+                            android:textColorHint="@color/primary_text"
+                            />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_help" />
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="0.1"
+                            android:layout_height="match_parent">
+
+
+                            <Spinner
+                                android:id="@+id/spinner_help"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/drawable_spinner_ticket"
+                                android:textAlignment="textStart">
+
+                            </Spinner>
+
+
+                            <View
+                                android:layout_marginBottom="@dimen/space_five"
+                                android:layout_gravity="bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/indicator_unselected"
+                                />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/transparent"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="0.9"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_message" />
+
+                        <EditText
+                            android:id="@+id/ticketMessage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:gravity="top|start"
+                            android:hint="@string/message"
+                            android:inputType="textMultiLine"
+                            android:lines="50"
+                            android:maxLines="50"
+                            android:minLines="6"
+                            android:paddingStart="@dimen/space_ten"
+                            android:paddingEnd="@dimen/space_five"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/holo_gray_dark"
+                            android:textColorHint="@color/primary_text" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/submitBtnTicket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_ten"
+                        android:layout_marginEnd="@dimen/space_sixty"
+                        android:layout_marginStart="@dimen/space_sixty"
+                        android:layout_marginTop="@dimen/space_twenty"
+                        style="@style/button_style_main"
+                        android:theme="@style/button_style_main"
+                        android:text="@string/submit"
+                        android:textAllCaps="false"
+                        />
+
+                </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

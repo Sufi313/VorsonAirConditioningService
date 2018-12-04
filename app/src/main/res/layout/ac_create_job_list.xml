@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/create_job_spinner_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_weight="0.65"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingLeft="@dimen/space_ten"
+            android:paddingRight="@dimen/space_ten"
+            android:paddingTop="@dimen/space_ten"
+            android:text="@string/ac"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_weight="0.35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingLeft="@dimen/space_ten"
+            android:paddingRight="@dimen/space_ten"
+            android:paddingTop="@dimen/space_ten"
+            android:text="@string/location"
+            android:textColor="@color/color_black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/showSubmitFormTextACno"
+                android:layout_weight="0.65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextLocation"
+                android:layout_weight="0.35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_ten"
+            android:paddingLeft="@dimen/space_ten"
+            android:paddingRight="@dimen/space_ten"
+            android:paddingTop="@dimen/space_ten"
+            android:text="@string/inspection_amp_checking"
+            android:textColor="@color/color_black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_marginStart="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/scope_of_service"
+                android:textColor="@color/color_black"
+                android:textSize="18sp"
+                android:background="@drawable/block_text_background"/>
+
+            <TextView
+                android:layout_marginEnd="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/action"
+                android:textColor="@color/color_black"
+                android:textSize="18sp"
+                android:background="@drawable/block_text_background"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/idu_filters"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/idu_evaporator_coil"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/idu_blower_amp_assambly"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/odu_condencer_coil"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/fan_motor"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/compressor"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/line_sets_insulation"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/unusual_vibration"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSOS9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.35"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/capacitor_amp_electrical_p_c_b"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/showSubmitFormTextSOS9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.65"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:textColor="@color/color_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutRSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/refreigerant_suction_pressure"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextRSP1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextRSP2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutSL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/system_leakages"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextSL1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextSL2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutIDUEC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/idu_evaporator_coil"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextIDUEC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextIDUEC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutODUCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/odu_condencer_coil"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextODUCC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextODUCC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutPIC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/piping_installation_coonectors"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextPIC1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextPIC2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/drain_system"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextDS1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextDS2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutPCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/power_control_system"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextPCS1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextPCS2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/showSubmitFormLayoutIDUODUSYS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_ten"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/space_ten"
+                android:layout_marginStart="@dimen/space_ten"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/space_ten"
+                android:paddingLeft="@dimen/space_ten"
+                android:paddingRight="@dimen/space_ten"
+                android:paddingTop="@dimen/space_ten"
+                android:text="@string/idu_amp_odu_system"
+                android:textColor="@color/color_black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/action"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:text="@string/comments"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_five"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextIDUODUSYS1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:gravity="center"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/showSubmitFormTextIDUODUSYS2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/color_black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>

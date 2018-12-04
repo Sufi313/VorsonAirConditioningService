@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".technician.AssignJobActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarAssignJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_blue_header"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAssignJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/goBackAssignJob"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/space_ten"
+                android:src="@drawable/ic_go_back_left_arrow"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/toolbarLogoImageTicketActivity"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/space_fifty"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/holygrailz_uk_profile_ui" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_white"
+        android:gravity="center"
+        android:weightSum="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:ems="1"
+            android:gravity="center"
+            android:text="Complaint ID"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@color/holo_gray_dark" />
+
+        <TextView
+            android:id="@+id/showItemQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@color/holo_gray_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="@color/holo_gray_dark" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="Priority"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/assignJob_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/assignJob_noFonudText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/space_ten"
+    android:background="@drawable/gradient_blue"
+    android:orientation="vertical"
+    tools:context="com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice.clients.LoginClientActivity">
+
+    <LinearLayout
+        android:id="@+id/backandlogo_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/holygrailz_uk_profile_ui"
+            android:layout_gravity="start"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/login_feilleds_layout"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/backandlogo_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_page_welcome"
+            android:gravity="center"
+            android:textSize="60sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_text1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="@dimen/space_ten"
+            android:paddingBottom="@dimen/space_ten"/>
+
+        <EditText
+            android:id="@+id/loginTechniEmial"
+            android:layout_marginLeft="@dimen/space_ten"
+            android:layout_marginRight="@dimen/space_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style= "@style/edit_text_style"
+            android:drawableStart="@drawable/ic_profile"
+            android:drawablePadding="@dimen/space_ten"
+            android:hint="User Name"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/loginTechniPassword"
+            android:layout_marginLeft="@dimen/space_ten"
+            android:layout_marginRight="@dimen/space_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/edit_text_style"
+            android:drawableStart="@drawable/ic_tool"
+            android:drawablePadding="@dimen/space_ten"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/login_techni_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_fifty"
+            android:layout_margin="@dimen/space_ten"
+            android:background="@drawable/button_style"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:secondaryProgressTint="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

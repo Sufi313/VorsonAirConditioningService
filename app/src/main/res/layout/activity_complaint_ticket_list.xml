@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clients.ComplaintTicketListActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarComplaintTicketList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_blue_header"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarComplaintTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/goBackComplaintTicketList"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="@dimen/space_ten"
+                android:src="@drawable/ic_go_back_left_arrow"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/app_name"/>
+
+            <ImageView
+                android:id="@+id/toolbarLogoImageTicketActivity"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/space_fifty"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/holygrailz_uk_profile_ui" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/footerComplaintTicketList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbarComplaintTicketList"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_ten"
+        android:paddingTop="@dimen/space_ten">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Complaints"
+            android:layout_marginBottom="@dimen/space_five"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/space_fifty">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_background"
+                android:layout_weight="0.3"
+                android:text="11"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tvTCComplaintTicketList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="10"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="Total "
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="0.2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_background"
+                android:layout_weight="0.3"
+                android:textColor="@color/colorPrimary"
+                android:text="2"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tvSCComplaintTicketList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="10"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="Solved "
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="0.2"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/space_fifty"
+            android:layout_marginTop="@dimen/space_five">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_background"
+                android:layout_weight="0.3"
+                android:text="8"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvPCComplaintTicketList"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="10"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="Pending "
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="0.2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_background"
+                android:layout_weight="0.3"
+                android:text="43"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tvCCComplaintTicketList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:ems="1"
+                android:lines="1"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="In-Progress "
+                android:textAlignment="textStart"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayoutComplaintTicketListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/footerComplaintTicketList"
+        android:background="@color/holo_gray_light"
+        android:gravity="center"
+        android:weightSum="87">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:ellipsize="end"
+            android:ems="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Sr No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:ellipsize="end"
+            android:ems="1"
+            android:maxLines="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Complaint No"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:paddingStart="1dp"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Date"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Service"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="18"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Status"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainLayoutComplaintTicketList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainLayoutComplaintTicketListHeader"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/recyclerViewComplaintTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/textNotFoundComplaintTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_invoices_found"
+            android:textSize="@dimen/space_thirty"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarComplaintTicketList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

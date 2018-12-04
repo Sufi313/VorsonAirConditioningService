@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/dialog_theme_background"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="@dimen/space_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/please_fill_and_confirm"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_job_et_confirm_clientNameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_ten"
+        android:layout_marginTop="@dimen/space_twentyfive"
+        android:hint="@string/customer_name_or_id"
+        android:inputType="text"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#5da1e6" />
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_ten"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="99">
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_in"
+            android:layout_weight="33"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingStart="@dimen/space_five"
+            android:textColorHint="#5da1e6" />
+
+        <Spinner
+            android:id="@+id/spinner_createJob_confirm_tih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_five"
+            android:layout_weight="33"
+            android:background="@drawable/drawable_spinner"
+            android:paddingStart="@dimen/space_twentyfive"
+            android:paddingEnd="0dp"
+            android:textAlignment="center">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_createJob_confirm_tim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_five"
+            android:layout_weight="33"
+            android:background="@drawable/drawable_spinner"
+            android:paddingStart="@dimen/space_twentyfive"
+            android:paddingEnd="0dp"
+            android:textAlignment="center">
+
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_ten"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:weightSum="99">
+
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/time_out"
+            android:layout_weight="33"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:paddingStart="@dimen/space_five"
+            android:textColorHint="#5da1e6" />
+
+        <Spinner
+            android:id="@+id/spinner_createJob_confirm_toh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_five"
+            android:layout_weight="33"
+            android:background="@drawable/drawable_spinner"
+            android:paddingStart="@dimen/space_twentyfive"
+            android:paddingEnd="0dp"
+            android:textAlignment="center">
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_createJob_confirm_tom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/space_five"
+            android:layout_weight="33"
+            android:background="@drawable/drawable_spinner"
+            android:paddingStart="@dimen/space_twentyfive"
+            android:paddingEnd="0dp"
+            android:textAlignment="center">
+
+        </Spinner>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/create_job_et_confirm_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_ten"
+        android:layout_marginTop="@dimen/space_ten"
+        android:hint="@string/distance_in_kilo_meter"
+        android:inputType="numberDecimal"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#5da1e6" />
+
+    <Button
+        android:id="@+id/submitCreateJobConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_ten"
+        android:background="@drawable/button_style"
+        android:text="@string/confirm_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

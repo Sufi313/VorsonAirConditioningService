@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">Vorson AC Services</string>
+    <string name="dummy_text">Check Your All booking</string>
+    <string name="login_page_welcome">Welcome</string>
+    <string name="dummy_text1"><b>"HELLO! "</b>It is a great honour to have you in our team. Congratulations and welcome!</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+
+
+    <string name="linktosite"><a href="https://www.vorson.net/">forget password?</a></string>
+    <string name="ticket_submit_description">Thank you for contacting us. A support ticket request has been created and a representative will be getting back to you shortly if necessary.</string>
+    <string name="register_text">Create Account</string>
+    <string name="vorson_address">173-W, Block 2, P.E.C.H.S.,Karachi</string>
+    <string name="vorson_cell">Cell: 0301"-"8254714, 0334"-"0666871</string>
+    <string name="vorson_email">Email: support@vorson.net</string>
+    <string name="vorson_sntn">SNTN "#" 2691543"-"0</string>
+    <string name="vorson_strn">STRN "#" 17"-"50"-"8708"-"013"-"19</string>
+    <string name="vorson_logo_description">Vorson Logo</string>
+    <string name="rupees">Rs:</string>
+    <string name="search_hint">Search"..."</string>
+    <string name="invoiceNo">Invoice#</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="invoice_calculation">Invoice Calculation</string>
+    <string name="amount">Amount</string>
+    <string name="rate">Rate</string>
+    <string name="quantity">Quantity</string>
+    <string name="description">Description</string>
+    <string name="service_items">Service / Items</string>
+    <string name="branch_address">Branch Address</string>
+    <string name="name_address">Name / Address</string>
+    <string name="d_n_no">D.N No :</string>
+    <string name="date">Date</string>
+    <string name="pvt_limited">(Pvt.)Limited</string>
+    <string name="sales_tax">Sales Tax</string>
+    <string name="total">Total</string>
+    <string name="advance">Advance</string>
+    <string name="balance_due">Balance Due</string>
+    <string name="sign_stamp">Sign Stamp</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="total_invoices">Total Invoices</string>
+    <string name="sindh_sales_tax_invoice">Sindh Sales Tax Invoice</string>
+    <string name="general_sales_tax_invoices">General Sales Tax Invoice</string>
+    <string name="sales_tax_invoice">Sales Tax Invoice</string>
+    <string name="tax">Tax</string>
+    <string name="pay_with_paypal">Pay with Paypal</string>
+    <string name="icon_content_description">Icon</string>
+
+    <string-array name="select_scope_services_mode">
+        <item>Select One</item>
+        <item>Normal</item>
+        <item>Chock</item>
+        <item>Service Dual</item>
+        <item>Weak</item>
+        <item>Defective</item>
+    </string-array>
+
+
+    <string-array name="select_refregerant_suction_pressor_mode">
+        <item>Select One</item>
+        <item>Normal</item>
+        <item>Low</item>
+        <item>Nil</item>
+        <item>Gas Charging</item>
+    </string-array>
+
+    <string-array name="select_system_leakage_mode">
+        <item>Select One</item>
+        <item>IDU</item>
+        <item>ODU</item>
+        <item>Piping</item>
+        <item>System</item>
+    </string-array>
+
+    <string-array name="select_iduEvaporator_coil_mode">
+        <item>Select One</item>
+        <item>General Service</item>
+        <item>Master Service</item>
+        <item>Repairing</item>
+        <item>Flushing Nitrogen</item>
+    </string-array>
+
+    <string-array name="select_piping_installation_connector_mode">
+        <item>Select One</item>
+        <item>Installation</item>
+        <item>Repairing</item>
+        <item>Extend</item>
+    </string-array>
+
+    <string-array name="select_power_control_system_mode">
+        <item>Select One</item>
+        <item>Installation</item>
+        <item>Repairing</item>
+    </string-array>
+
+    <string-array name="select_idu_and_odu_system_mode">
+        <item>Select One</item>
+        <item>Installation</item>
+        <item>Dismantling</item>
+    </string-array>
+
+    <string-array name="status_list_for_accept_job">
+        <item>Select One</item>
+        <item>Start</item>
+        <item>In Process</item>
+        <item>Done</item>
+        <item>Pending</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Select One</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="hours_array">
+        <item>HH</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <string-array name="mint_array">
+        <item>MM</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+    </string-array>
+
+    <!--Create Job Form Text-->
+
+    <string name="refreigerant_suction_pressure">Refreigerant Suction Pressure</string>
+    <string name="system_leakages">System Leakages</string>
+    <string name="idu_evaporator_coil">IDU Evaporator Coil</string>
+    <string name="inspection_amp_checking"><![CDATA[Inspection & Checking]]></string>
+    <string name="select_and_fill_form">Select And Fill Form</string>
+    <string name="scope_of_service">Scope of Service</string>
+    <string name="idu_filters">IDU Filters</string>
+    <string name="idu_blower_amp_assambly"><![CDATA[IDU Blower & Assambly]]></string>
+    <string name="fan_motor">Fan Motor</string>
+    <string name="compressor">Compressor</string>
+    <string name="line_sets_insulation">Line Sets Insulation</string>
+    <string name="unusual_vibration">Unusual Vibration</string>
+    <string name="capacitor_amp_electrical_p_c_b"><![CDATA[Capacitor & Electrical P.C.B]]></string>
+    <string name="piping_installation_coonectors">Piping/Installation/Connectors</string>
+    <string name="drain_system">Drain System</string>
+    <string name="power_control_system">Power Control System</string>
+    <string name="idu_amp_odu_system"><![CDATA[IDU & ODU System]]></string>
+    <string name="ac">AC No.</string>
+    <string name="odu_condencer_coil">ODU Condencer Coil</string>
+    <string name="location">Location&#160;</string>
+    <string name="comments">Comment</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="comments_bubble">Comments Bubble</string>
+    <string name="add_new_page">Add new Page</string>
+    <string name="submit_job_form">Submit Job Form</string>
+
+    <string name="please_fill_and_confirm">Please Fill and Confirm</string>
+    <string name="time_in">Time In</string>
+    <string name="time_out">Time Out</string>
+    <string name="distance_in_kilo_meter">Distance in Kilo meter</string>
+    <string name="confirm_submit">Confirm Submit</string>
+    <string name="customer_name_or_id">Customer Name or Id</string>
+    <string name="distance">Distance</string>
+    <string name="action">Action</string>
+    <string name="no_invoices_found">No Invoices Found</string>
+    <string name="submit_your_complaint">Submit Your Complaint</string>
+    <string name="full_name">Full Name</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message...</string>
+    <string name="submit">Submit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet_message">No Internet connection please check your setting then try again</string>
+    <string name="error">Error</string>
+    <string name="address">Address</string>
+
+    <!--Create Job Form Text-->
+</resources>

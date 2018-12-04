@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout_louncher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue"
+    tools:context="com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice.LounchActivity">
+
+    <!--android:background="@drawable/gradient_blue"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_lounch2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/launchActivityLogo"
+            android:layout_width="250dp"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:elevation="100dp"
+            android:src="@drawable/holygrailz_uk_profile_ui" />
+
+        <Button
+            android:id="@+id/lounch_form_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_complaint"
+            android:paddingStart="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:layout_marginEnd="@dimen/space_twenty"
+            android:layout_marginStart="@dimen/space_twenty"
+            android:layout_marginTop="@dimen/space_fourty"
+            android:background="@drawable/button_style"
+            android:text="Lounch Your Complaints"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/lounch_supplies_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawableStart="@drawable/ic_shopping_cart"
+            android:paddingStart="@dimen/space_ten"
+            android:paddingEnd="@dimen/space_ten"
+            android:layout_marginEnd="@dimen/space_twenty"
+            android:layout_marginStart="@dimen/space_twenty"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:text="Order Your Suplies"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_lounch2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/space_ten"
+        android:weightSum="1">
+
+        <Button
+            android:paddingStart="@dimen/space_twenty"
+            android:paddingEnd="@dimen/space_twenty"
+            android:drawableStart="@drawable/ic_profile"
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/lounch_client_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_style_dashbord_lounch"
+            android:gravity="center"
+            android:text="Client"
+            android:textAllCaps="false"
+            android:textColor="@color/color_black"
+            android:textSize="14sp" />
+
+        <Button
+            android:paddingStart="@dimen/space_twenty"
+            android:paddingEnd="@dimen/space_twenty"
+            android:drawableStart="@drawable/ic_technician"
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/lounch_technician_login"
+            android:background="@drawable/button_style_dashbord_lounch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="Technician"
+            android:textAllCaps="false"
+            android:textColor="@color/color_black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

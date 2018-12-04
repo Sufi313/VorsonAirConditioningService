@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/holygrailz_uk_profile_ui"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/holygrailz_uk_profile_ui"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <receiver android:name=".extrass.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".LounchActivity"
+            android:theme="@style/AppFullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".utilities.TicketActivity"
+            android:theme="@style/AppFullTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name=".clients.LoginClientActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.ClientDashBoardActivity"
+            android:theme="@style/AppFullTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".productsAndSupplies.ProductsAndCategoryActivity"
+            android:parentActivityName=".LounchActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".productsAndSupplies.NewAcPurchaseActivity"
+            android:parentActivityName=".productsAndSupplies.ProductsAndCategoryActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.PaymentListActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.ProfileActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".technician.TechnicianDashboardActivity"
+            android:parentActivityName=".LounchActivity"
+            android:theme="@style/AppFullTheme" />
+
+        <service
+            android:name=".extrass.MessagingSevices"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".details.InvoiceDetailActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.ConfirmPayAmountActivity"
+            android:parentActivityName=".clients.ConfirmPayAmountActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".technician.CreateJobFormActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity android:name=".technician.ShowSubmitJobActivity" />
+        <activity
+            android:name=".technician.AssignJobActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".technician.ViewAssignJobActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".technician.CreateJobListActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".technician.TechnicianProfile"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.ComplaintTicketListActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity
+            android:name=".clients.TicketDetailActivity"
+            android:theme="@style/AppFullTheme" />
+        <activity android:name=".technician.TechHelpList" />
+    </application>
+
+</manifest>

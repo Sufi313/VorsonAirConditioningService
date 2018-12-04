@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "566908587917",
+    "firebase_url": "https://vorsonairconditioningservice.firebaseio.com",
+    "project_id": "vorsonairconditioningservice",
+    "storage_bucket": "vorsonairconditioningservice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566908587917:android:7050d6eeefac558d",
+        "android_client_info": {
+          "package_name": "com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566908587917-pg8f5ubbdr586l28npjn7ung2du3f496.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tagtechnologies.muhammadsufwan.vorsonairconditioningservice",
+            "certificate_hash": "a0b605cef83436079c98d9044cec77c3094546ba"
+          }
+        },
+        {
+          "client_id": "566908587917-9vgq54vpqqb2v7595o79jchmnvhedbj2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWPqLTLaAo8P8lKPjU85jl4JWHAxDRBmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566908587917-9vgq54vpqqb2v7595o79jchmnvhedbj2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

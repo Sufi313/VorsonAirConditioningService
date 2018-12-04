@@ -1,0 +1,107 @@
+<!--suppress ALL -->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <!--suppress AndroidDomInspection -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="cardViewStyle">@style/cardView</item>
+
+    </style>
+
+    <!--suppress AndroidDomInspection -->
+    <style name="AppFullTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="cardViewStyle">@style/cardView</item>
+
+    </style>
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="DialogSpotColor">@color/colorPrimaryDark</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+    <style name="cardView" parent="CardView">
+        <!--<item name="cardCornerRadius=">0dp</item>-->
+        <!--<item name="cardElevation">30dp</item>-->
+    </style>
+
+    <style name="button_style_main" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="elevation">1dp</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="background">@drawable/ripple_effect_theme_btn</item>
+
+    </style>
+
+    <style name="edit_text_style" >
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">#5da1e6</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:ems">10</item>
+
+    </style>
+
+    <style name="edit_text_style_profile" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorHint">#5da1e6</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:background">@drawable/edit_text_back_profile</item>
+        <item name="android:padding">@dimen/space_ten</item>
+        <item name="android:ems">10</item>
+
+    </style>
+
+    <style name="mySpinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#5da1e6</item>
+        <item name="colorControlActivated">#0288d1</item>
+        <item name="colorControlHighlight">#0288d1</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <!-- this is new -->
+        <item name="colorAccent">@color/colorPrimary</item>
+
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+        <item name="android:colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/colorPrimary</item>
+        <item name="android:calendarTextColor">@color/colorPrimary</item>
+        <item name="android:dayOfWeekBackground">@color/colorPrimary</item>
+        <item name="android:yearListSelectorColor">@color/colorPrimary</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:minDate">01/01/1991</item>
+    </style>
+
+    <style name="dashbord_button_launcher_style" >
+
+        <item name="background">@drawable/button_style_dashbord_lounch</item>
+
+    </style>
+
+</resources>

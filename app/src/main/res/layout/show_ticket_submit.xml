@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="@dimen/space_ten"
+            android:layout_marginBottom="@dimen/space_twenty"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:src="@drawable/holygrailz_uk_profile_ui"
+            android:contentDescription="@string/vorson_logo_description"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_twenty"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/show_ticket_request_header"
+            android:layout_marginTop="@dimen/space_twenty"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_ticket_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:layout_marginBottom="@dimen/space_five"
+                android:text="Dear Sufwan,"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:text="@string/ticket_submit_description"
+                android:textColor="@color/holo_gray_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="@dimen/space_ten"
+                android:paddingStart="@dimen/space_ten"
+                android:paddingTop="20dp"
+                android:text="Ticket Details"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:src="@drawable/ic_ticket"
+                    android:contentDescription="@string/icon_content_description"/>
+
+                <TextView
+                    android:id="@+id/id_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:src="@drawable/ic_timer_status"
+                    android:contentDescription="@string/icon_content_description"/>
+
+                <TextView
+                    android:id="@+id/status_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:contentDescription="@string/icon_content_description"
+                    android:src="@drawable/ic_mail_ticket"/>
+
+                <TextView
+                    android:id="@+id/email_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:src="@drawable/ic_phone_android_black_24dp"
+                    android:contentDescription="@string/icon_content_description"/>
+
+                <TextView
+                    android:id="@+id/phone_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:src="@drawable/ic_screw"
+                    android:contentDescription="@string/icon_content_description"/>
+
+                <TextView
+                    android:id="@+id/help_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/space_five"
+                android:weightSum="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:src="@drawable/ic_ticket_message"/>
+
+                <TextView
+                    android:id="@+id/message_ticket_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.09"
+                    android:layout_marginBottom="@dimen/space_ten"
+                    android:maxLines="100"
+                    android:paddingEnd="@dimen/space_ten"
+                    android:paddingStart="@dimen/space_ten"
+                    android:textColor="@color/holo_gray_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_twenty"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/go_dashboard"
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/space_fourty"
+                    android:layout_marginStart="@dimen/space_ten"
+                    android:background="@drawable/button_style"
+                    android:text="Form"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/new_ticket"
+                    android:layout_width="120dp"
+                    android:layout_height="@dimen/space_fourty"
+                    android:layout_marginEnd="@dimen/space_ten"
+                    android:layout_marginStart="@dimen/space_ten"
+                    android:background="@drawable/button_style"
+                    android:text="New Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

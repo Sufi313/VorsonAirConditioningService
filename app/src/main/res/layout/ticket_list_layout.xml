@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/space_five"
+    android:id="@+id/mainLayoutTicketList"
+    android:gravity="center"
+    android:weightSum="100">
+
+
+
+        <TextView
+            android:id="@+id/srNoTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:ellipsize="end"
+            android:ems="10"
+            android:maxLines="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingEnd="@dimen/space_ten"
+            android:paddingStart="@dimen/space_ten"
+            android:paddingTop="@dimen/space_five"
+            android:text="Sr No"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"
+             />
+
+        <TextView
+            android:id="@+id/compNoTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:ellipsize="end"
+            android:ems="1"
+            android:maxLines="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Complaint No"
+            android:textColor="@color/color_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dateTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:ellipsize="end"
+            android:ems="10"
+            android:maxLines="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Date"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/serviceTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:ems="10"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Service"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/statusTicketList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:ems="10"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/space_five"
+            android:paddingTop="@dimen/space_five"
+            android:text="Status"
+            android:textColor="@color/color_black"
+            android:textSize="15sp" />
+
+
+
+</LinearLayout>
